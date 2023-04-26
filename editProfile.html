@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="body">
+    <div class="edit">
+        <a href="/profile.html" class="cancel-link3"><span class="cancel-icon3">&#x2716;</span></a>
+        <h2>Edit profile</h2>
+        <h3>Account</h3>
+        <hr>
+        <div class="editingContent">
+            <div class="editInfo">
+                <h4>Email address</h4>
+                <a href="" id="open-modal-btn">klaxu888@gmail.com</a>
+            </div>
+            <div class="editInfo">
+                <h4>Username</h4>
+                <a href="" id="open-modal-btn1">klaxu888</a>
+            </div>
+            <div class="editInfo">
+                <h4>Profile information</h4>
+                    <a id="nameinfo" href="/profileUpdate.html">klaxu888</a>
+                    <a href="/profileUpdate.html" ><img  src="/img/profile.jpeg" alt=""></a>
+            </div>
+            <div class="editInfo">
+                <h4>Password</h4>
+                <a href="" id="open-modal-btn3">. . . . . .</a>
+            </div>
+            <div class="editInfo">
+                <h4>Cover picture</h4>
+                <a href="" id="open-modal-btn2"><img src="/img/blog1.jpg" alt=""></a>
+            </div>
+        </div>
+        <hr>
+        <a id="logout" href="">Log out</a>
+    </div>
+    <div id="modal" class="modal">
+		<div class="modal-content">
+			<h2>Email Address</h2>
+			<input type="email" id="email" name="email">
+			<div class="modal-buttons">
+				<button id="cancel-btn">Cancel</button>
+				<button id="save-btn">Save</button>
+			</div>
+		</div>
+	</div>
+    <div id="modal1" class="modal">
+		<div class="modal-content">
+			<h2>Username</h2>
+			<input type="email" id="username" name="username" required>
+			<div class="modal-buttons">
+				<button id="cancel-btn1">Cancel</button>
+				<button id="save-btn1">Save</button>
+			</div>
+		</div>
+	</div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+          <h2>Change Password</h2>
+          <form id="change-password-form">
+            <label for="old-password">Old Password:</label>
+            <input type="password" id="old-password" name="old-password" required>
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <label for="confirm-new-password">Confirm New Password:</label>
+            <input type="password" id="confirm-new-password" name="confirm-new-password" required>
+            <div class="modal-buttons">
+              <button id="cancel-btn3">Cancel</button>
+              <button type="submit" id="save-btn3">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    <!-- The modal -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+        <h2>Update Cover Picture</h2>
+        <form>
+            <div class="form-group">
+            <input type="file" id="cover-picture" name="cover-picture" accept=".jpg,.jpeg,.png" required>
+            </div>
+            <div class="modal-buttons">
+            <button id="cancel-btn2">Cancel</button>
+            <button type="submit" id="save-btn2">Save</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script defer src="/main.js"></script>
+</body>
+</html> 
